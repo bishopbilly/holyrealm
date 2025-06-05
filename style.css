@@ -1,7 +1,32 @@
+* {
+    font-family: Vollkorn;
+}
 .nav ul {
     display: flex;
-    flex-direction: row;
+    justify-content: end;
+}
+.nav li {
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: border-width 0.3s, padding 0.3s;
+}
+.nav li:hover {
+    border-width: 5px;
+    padding: 6px;
+}
+.nav div {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.5em;
+    transition: transform .1s;
+}
+.nav div:hover {
+    transform: translateX(-4px);
+}
+a {
     text-decoration: none;
-    list-style: none;
-    justify-content: right;
+    color: black;
 }
