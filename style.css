@@ -1,3 +1,10 @@
+.page-top {
+    margin: auto;
+    text-align: center;
+    border: 6px groove black;
+    
+}
+
 * {
     font-family: Vollkorn;
 }
@@ -6,14 +13,14 @@
     justify-content: end;
 }
 .nav li {
-    border: 1px solid black;
+    border: 6px groove black;
     list-style-type: none;
     padding: 10px;
     box-sizing: border-box;
-    transition: border-width 0.3s, padding 0.3s;
+    transition: border 0.3s, padding 0.3s;
 }
-.nav li:hover {
-    border-width: 5px;
+.nav li.active, .nav li:hover {
+    border: 6px solid black;
     padding: 6px;
 }
 .nav div {
@@ -21,12 +28,17 @@
     align-items: center;
     padding: 0 10px;
     font-size: 1.5em;
-    transition: transform .1s;
-}
-.nav div:hover {
-    transform: translateX(-4px);
 }
 a {
     text-decoration: none;
     color: black;
+}
+
+.nav ul a:first-child {
+    margin: auto 10px;
+}
+
+.box.title {
+    border: 5px double black;
+    text-align: center;
 }
